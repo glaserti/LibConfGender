@@ -305,7 +305,7 @@ classifiedNames = classify(dicOfSpeakers, dicOfNames)
 
 import collections
 listOfUnclassifiedNames = []
-for e in testXY:
+for e in classifiedNames[0]:
     if e['gender'] == 5:
         listOfUnclassifiedNames.append(e['name'])
 countedNames=collections.Counter(listOfUnclassifiedNames)
